@@ -7,9 +7,12 @@ public class Oefening4 {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		
-		System.out.print("Geef een afstand in kilometer: ");
+		int afstand = 0;
 		
-		int afstand = scanner.nextInt();
+		while(afstand <= 0) {
+			System.out.print("Geef een afstand in kilometer: ");
+			afstand = scanner.nextInt();
+		}
 		
 		for(int snelheid = 40; snelheid <= 140; snelheid+= 10) {
 			
