@@ -17,18 +17,19 @@ public class Oefening6 {
 
 		String delers = "";
 
-		for (int i = 1; i <= getal; i++) {
-			
+		for (int i = 1; i <= getal / 2 + 1; i++) {
+
 			if (getal % i == 0) {
-				
+
 				if (i != getal) {
 					delers += " " + i;
-				} else {
-					delers += " en " + i;
 				}
 				
+
 			}
 		}
+		
+		delers += getal != 1 ? " en " + getal : " "+getal;
 
 		System.out.println("De delers zijn:" + delers);
 
