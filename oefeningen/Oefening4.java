@@ -7,16 +7,16 @@ public class Oefening4 {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		
+		
 		int afstand = 0;
 		
-		while(afstand <= 0) {
+		do {
 			System.out.print("Geef een afstand in kilometer: ");
 			afstand = scanner.nextInt();
-		}
+		} while (afstand < 1);
 		
 		for(int snelheid = 40; snelheid <= 140; snelheid+= 10) {
 			
-			//              35      40
 			int uren = afstand/snelheid;
 			int minuten = afstand%snelheid*60/snelheid;
 			

@@ -6,9 +6,12 @@ public class Oefening3 {
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
+		int postcode = 0;
 
-		System.out.print("Geef een postcode (4 cijfers): ");
-		int postcode = scanner.nextInt();
+		do {
+			System.out.print("Geef een postcode (4 cijfers): ");
+			postcode = scanner.nextInt();
+		} while (postcode < 1000 || postcode > 9999);
 
 		String stad = switch (postcode) {
 		case 9300 -> "Aalst";

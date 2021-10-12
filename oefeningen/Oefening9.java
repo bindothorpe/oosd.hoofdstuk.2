@@ -10,10 +10,11 @@ public class Oefening9 {
 		int stappen = 0;
 		int getal = -1;
 		
-		while(getal < 0) {
+		
+		do {
 			System.out.print("Geef een strikt positief getal in: ");
 			getal = scanner.nextInt();
-		}
+		} while (getal < 1);
 		
 		while(getal != 1) {
 			if(getal%2==0) {
